@@ -3,15 +3,15 @@ class ProblemA {
     fun main() {
 
         // Считываем количество запросов t
-        var t = readInt()
+        val t = readInt()
         for (i in 0 until t) {
             // Считывать длины прыжков a,b и количество прыжков k в виде строку и переобразовать его в лист строк
-            var (a, b, k) = readListLong()
+            val (a, b, k) = readListLong()
 
             // Формула для вычисление шагов на правую сторону a * (k / 2 + k % 2)
-            var right = a * (k / 2 + k % 2)
+            val right = a * (k / 2 + k % 2)
             // Формула  для вычисление шагов на левую сторону b * (k / 2)
-            var left = b * (k / 2)
+            val left = b * (k / 2)
              // Вывести результат
             println(right - left);
         }

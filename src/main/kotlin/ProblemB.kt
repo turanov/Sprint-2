@@ -1,7 +1,7 @@
 class ProblemB {
 
     fun main() {
-        var t = readInt()
+        val t = readInt()
         for (i in 0 until t) {
             var (n, k) = readListInt()
             var result = ""
